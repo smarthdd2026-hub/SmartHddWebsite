@@ -1,7 +1,9 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-export async function POST(request: NextRequest) {
+export const runtime = 'edge';
+
+export async function POST(request: Request) {
   try {
     const { name, email, phone, message } = await request.json();
 
@@ -17,7 +19,7 @@ export async function POST(request: NextRequest) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     // Send email using Resend
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: 'SmartHDD Contact <onboarding@resend.dev>',
       to: 'smarthdd2026@gmail.com',
       replyTo: email,
@@ -34,13 +36,25 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ 
       success: true,
-      message: 'Form submitted successfully' 
+      message: 'Form submitted successfully',
+      emailId: result.data?.id
     });
   } catch (error) {
     console.error('Contact form error:', error);
     return NextResponse.json(
-      { error: 'Failed to submit form' },
+      { error: 'Failed to submit form', details: error instanceof Error ? error.message : 'Unknown error' },
       { status: 500 }
     );
   }
+}
+
+export async function OPTIONS(request: Request) {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    },
+  });
 }
