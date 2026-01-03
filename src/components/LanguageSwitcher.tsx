@@ -6,9 +6,9 @@ import { Globe } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 
 const languages = [
-  { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'he', name: 'עברית', flag: '🇮🇱' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+  { code: 'en', name: 'English' },
+  { code: 'he', name: 'עברית' },
+  { code: 'ru', name: 'Русский' },
 ];
 
 export default function LanguageSwitcher() {
@@ -55,12 +55,11 @@ export default function LanguageSwitcher() {
             <button
               key={lang.code}
               onClick={() => switchLocale(lang.code)}
-              className={`w-full flex items-center space-x-3 px-4 py-2 text-sm hover:bg-gray-100 ${
+              className={`w-full flex items-center px-4 py-2 text-sm hover:bg-gray-100 ${
                 locale === lang.code ? 'bg-primary/5 text-primary' : 'text-gray-700'
               }`}
             >
-              <span className="text-lg">{lang.flag}</span>
-              <span>{lang.name}</span>
+              {lang.name}
             </button>
           ))}
         </div>
