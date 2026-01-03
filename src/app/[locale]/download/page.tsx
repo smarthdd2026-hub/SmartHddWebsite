@@ -92,7 +92,7 @@ export default function DownloadPage() {
           <div className="space-y-6">
             <div className="border-l-4 border-primary pl-4">
               <div className="flex items-center gap-2 mb-2">
-                <span className="font-bold text-gray-900">Version 1.0.0</span>
+                <span className="font-bold text-gray-900">{t('version')}</span>
                 <span className="text-sm text-gray-500">• {t('versionDate')}</span>
               </div>
               <ul className="text-gray-600 space-y-1">
