@@ -369,6 +369,15 @@ export default function ContentEditor() {
             { label: 'CTA Button', key: 'cta' },
           ])}
 
+          {renderSection('Products Page - General', 'products', [
+            { label: 'Page Title', key: 'title' },
+            { label: 'Page Subtitle', key: 'pageSubtitle' },
+            { label: 'Drives Not Included Note', key: 'note', multiline: true },
+            { label: 'Feature Comparison Title', key: 'featureComparison' },
+            { label: 'Feature Label', key: 'feature' },
+            { label: 'Price Label', key: 'price' },
+          ])}
+
           {/* Benefits Section */}
           {renderSection('Benefits', 'benefits', [
             { label: 'Section Title', key: 'title' },
