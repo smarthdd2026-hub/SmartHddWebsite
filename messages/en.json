@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "download": "Download",
+    "howItWorks": "How It Works",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Set It, Forget It, Stay Protected, Stay Lazy!",
+    "subtitle": "The world's first automated backup device that physically disconnects your drives from hackers, ransomware, and AI surveillance.",
+    "cta": "Download Software",
+    "ctaSecondary": "Learn More",
+    "videoUrl": "https://www.youtube.com/watch?v=VW382BK3okY"
+  },
+  "problem": {
+    "title": "The Problem With Traditional Backups",
+    "alwaysConnected": "Always Connected = Always Vulnerable",
+    "alwaysConnectedDesc": "Your backup drive is exposed 24/7 to ransomware, hackers, and system failures.",
+    "manualBackup": "Manual Backups Get Forgotten",
+    "manualBackupDesc": "Life gets busy. One forgotten backup could cost you everything.",
+    "cloudPrivacy": "Cloud Backups Sacrifice Privacy",
+    "cloudPrivacyDesc": "Your data analyzed by AI, stored on someone else's servers, vulnerable to breaches."
+  },
+  "solution": {
+    "title": "The SmartHDD Solution",
+    "subtitle": "Physical disconnection meets smart automation",
+    "feature1": "Physical Disconnection",
+    "feature1Desc": "Your drives are offline 99% of the time. Hackers can't access what's not connected.",
+    "feature2": "Fully Automated",
+    "feature2Desc": "Set your schedule once. SmartHDD handles everything automatically.",
+    "feature3": "True Privacy",
+    "feature3Desc": "Your data stays on YOUR drives. No cloud, no AI scanning, 100% offline."
+  },
+  "products": {
+    "title": "Choose Your Protection Level",
+    "basic": {
+      "name": "SmartHDD Basic",
+      "price": "₪699",
+      "subtitle": "Perfect for home users",
+      "feature1": "1 USB Port",
+      "feature2": "Automated Scheduling",
+      "feature3": "Full & Incremental Backups",
+      "feature4": "Daily/Weekly/Monthly",
+      "feature5": "Windows Software Included",
+      "feature6": "Physical Protection",
+      "cta": "Contact Us"
+    },
+    "pro": {
+      "name": "SmartHDD Pro",
+      "price": "₪1,299",
+      "subtitle": "Perfect for power users",
+      "feature1": "2 USB Ports",
+      "feature2": "Independent Schedules",
+      "feature3": "Full & Incremental Backups",
+      "feature4": "Advanced Rotation",
+      "feature5": "Redundant Backup Strategy",
+      "feature6": "Maximum Flexibility",
+      "cta": "Contact Us",
+      "popular": "Most Popular"
+    },
+    "note": "Drives not included. Works with any USB flash drive or external HDD."
+  },
+  "howItWorks": {
+    "title": "How SmartHDD Works",
+    "step1": "Connect & Configure",
+    "step1Desc": "Plug SmartHDD into your PC, connect your USB drives, and set your backup schedule using our simple software.",
+    "step2": "Automatic Operation",
+    "step2Desc": "SmartHDD physically connects your drive at the scheduled time, your PC performs the backup, then automatically disconnects it.",
+    "step3": "Stay Protected",
+    "step3Desc": "Your drives remain offline and protected from ransomware, hackers, and wear. You never have to remember to backup again."
+  },
+  "benefits": {
+    "title": "Why SmartHDD?",
+    "ransomware": "Ransomware Protection",
+    "ransomwareDesc": "Disconnected drives can't be encrypted by ransomware. Your backups stay safe even if your PC is compromised.",
+    "privacy": "Complete Privacy",
+    "privacyDesc": "Your data never touches the cloud. No AI scanning, no third-party access, no privacy concerns.",
+    "automated": "Set & Forget",
+    "automatedDesc": "Configure once, protected forever. Perfect for busy people who value their data but hate maintenance.",
+    "longevity": "Extended Drive Life",
+    "longevityDesc": "Drives last longer when not constantly powered. Reduce wear and tear by 95%.",
+    "flexible": "Smart Scheduling",
+    "flexibleDesc": "Daily, weekly, or monthly backups. Full or incremental. Pro version supports independent schedules per drive.",
+    "simple": "Easy Setup",
+    "simpleDesc": "No technical knowledge required. If you can plug in a USB drive, you can use SmartHDD."
+  },
+  "footer": {
+    "tagline": "Your Data, Physically Protected",
+    "company": "Company",
+    "products": "Products",
+    "support": "Support",
+    "legal": "Legal",
+    "rights": "All rights reserved."
+  }
+}
