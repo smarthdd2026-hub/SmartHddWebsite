@@ -12,6 +12,8 @@ export default function ProductCard({ type }: ProductCardProps) {
   const t = useTranslations('products');
   const locale = useLocale();
   const isPro = type === 'pro';
+  const isRTL = locale === 'he';
+  const showPrices = t('showPrices') !== 'false';
 
   const features = [
     t(`${type}.feature1`),
@@ -29,7 +31,7 @@ export default function ProductCard({ type }: ProductCardProps) {
       }`}
     >
       {isPro && (
-        <div className="absolute top-4 right-4 bg-accent text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+        <div className={`absolute top-4 ${isRTL ? 'left-4' : 'right-4'} bg-accent text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1`}>
           <Star size={16} fill="currentColor" />
           {t('pro.popular')}
         </div>
@@ -39,9 +41,11 @@ export default function ProductCard({ type }: ProductCardProps) {
         <h3 className="text-2xl font-bold text-gray-900 mb-2">{t(`${type}.name`)}</h3>
         <p className="text-gray-600 mb-4">{t(`${type}.subtitle`)}</p>
 
-        <div className="mb-6">
-          <span className="text-5xl font-bold text-primary">{t(`${type}.price`)}</span>
-        </div>
+        {showPrices && (
+          <div className="mb-6">
+            <span className="text-5xl font-bold text-primary">{t(`${type}.price`)}</span>
+          </div>
+        )}
 
         <ul className="space-y-3 mb-8">
           {features.map((feature, index) => (

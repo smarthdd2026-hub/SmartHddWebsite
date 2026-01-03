@@ -3,6 +3,7 @@ import ProductCard from '@/components/ProductCard';
 
 export default function ProductsPage() {
   const t = useTranslations('products');
+  const showPrices = t('showPrices') !== 'false';
 
   return (
     <div className="pt-24 pb-20">
@@ -84,11 +85,13 @@ export default function ProductsPage() {
                   <td className="py-4 px-4 text-center text-gray-400">—</td>
                   <td className="py-4 px-4 text-center text-accent bg-primary-50">✓</td>
                 </tr>
-                <tr className="border-t-2 border-gray-200 font-bold">
-                  <td className="py-4 px-4 text-gray-900">{t('price')}</td>
-                  <td className="py-4 px-4 text-center text-primary">₪699</td>
-                  <td className="py-4 px-4 text-center text-primary bg-primary-50">₪1,299</td>
-                </tr>
+                {showPrices && (
+                  <tr className="border-t-2 border-gray-200 font-bold">
+                    <td className="py-4 px-4 text-gray-900">{t('price')}</td>
+                    <td className="py-4 px-4 text-center text-primary">{t('basic.price')}</td>
+                    <td className="py-4 px-4 text-center text-primary bg-primary-50">{t('pro.price')}</td>
+                  </tr>
+                )}
               </tbody>
             </table>
           </div>

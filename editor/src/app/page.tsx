@@ -128,6 +128,29 @@ export default function ContentEditor() {
     }
   };
 
+  const renderToggleField = (label: string, path: string, value: string) => {
+    const isEnabled = value !== 'false';
+    return (
+      <div className="mb-4 flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+        <label className="text-sm font-semibold text-gray-700">
+          {label}
+        </label>
+        <button
+          onClick={() => updateTranslation(path, isEnabled ? 'false' : 'true')}
+          className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+            isEnabled ? 'bg-primary' : 'bg-gray-300'
+          }`}
+        >
+          <span
+            className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+              isEnabled ? 'translate-x-6' : 'translate-x-1'
+            }`}
+          />
+        </button>
+      </div>
+    );
+  };
+
   const renderEditableField = (label: string, path: string, value: string, multiline = false) => {
     return (
       <div className="mb-4">
@@ -307,6 +330,16 @@ export default function ContentEditor() {
             { label: 'Feature 3 - Title', key: 'feature3' },
             { label: 'Feature 3 - Description', key: 'feature3Desc', multiline: true },
           ])}
+
+          {/* Products Settings */}
+          <div className="bg-white rounded-xl shadow-lg p-6 mb-6">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <div className="w-2 h-6 bg-primary rounded"></div>
+              Products Settings
+            </h3>
+            {renderToggleField('Show Prices on Website', 'products.showPrices', translations[currentLocale]?.products?.showPrices || 'true')}
+            <p className="text-sm text-gray-500 mt-2">When disabled, prices will be hidden from the products page and comparison table.</p>
+          </div>
 
           {/* Products Section */}
           {renderSection('Products - Basic', 'products.basic', [

@@ -73,7 +73,8 @@
     "independentSchedules": "Independent Schedules Per Drive",
     "advancedRotation": "Advanced Rotation Strategy",
     "redundantBackup": "Redundant Backup Support",
-    "price": "Price"
+    "price": "Price",
+    "showPrices": "false"
   },
   "howItWorks": {
     "title": "How SmartHDD Works",

@@ -12,7 +12,7 @@
     "subtitle": "המכשיר הראשון בעולם לגיבוי אוטומטי שמנתק פיזית את הכוננים שלך מפני האקרים, תוכנות כופר ומעקב של בינה מלאכותית.",
     "cta": "הורד תוכנה",
     "ctaSecondary": "למד עוד",
-    "videoUrl": ""
+    "videoUrl": "https://www.youtube.com/watch?v=VW382BK3okY"
   },
   "problem": {
     "title": "הבעיה עם גיבויים מסורתיים",
@@ -73,7 +73,8 @@
     "independentSchedules": "לוחות זמנים עצמאיים לכל כונן",
     "advancedRotation": "אסטרטגיית רוטציה מתקדמת",
     "redundantBackup": "תמיכה בגיבוי כפול",
-    "price": "מחיר"
+    "price": "מחיר",
+    "showPrices": "false"
   },
   "howItWorks": {
     "title": "איך SmartHDD עובד",
