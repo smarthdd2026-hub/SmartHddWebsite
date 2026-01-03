@@ -386,11 +386,132 @@ export default function ContentEditor() {
             { label: 'Simple - Description', key: 'simpleDesc', multiline: true },
           ])}
 
+          {/* How It Works Section */}
+          {renderSection('How It Works (Home Page)', 'howItWorks', [
+            { label: 'Section Title', key: 'title' },
+            { label: 'Step 1 - Title', key: 'step1' },
+            { label: 'Step 1 - Description', key: 'step1Desc', multiline: true },
+            { label: 'Step 2 - Title', key: 'step2' },
+            { label: 'Step 2 - Description', key: 'step2Desc', multiline: true },
+            { label: 'Step 3 - Title', key: 'step3' },
+            { label: 'Step 3 - Description', key: 'step3Desc', multiline: true },
+          ])}
+
+          {/* How It Works Extended Section */}
+          {renderSection('How It Works Page - Extended', 'howItWorksExtended', [
+            { label: 'Page Subtitle', key: 'subtitle', multiline: true },
+            { label: 'What Makes Unique - Title', key: 'whatMakesUnique' },
+            { label: 'Physical Disconnection - Title', key: 'physicalDisconnection' },
+            { label: 'Physical Disconnection - Description', key: 'physicalDesc', multiline: true },
+            { label: 'Smart Scheduling - Title', key: 'smartScheduling' },
+            { label: 'Smart Scheduling - Description', key: 'schedulingDesc', multiline: true },
+            { label: 'Zero Touch - Title', key: 'zeroTouch' },
+            { label: 'Zero Touch - Description', key: 'zeroTouchDesc', multiline: true },
+            { label: 'Works With Any Drive - Title', key: 'worksWithAny' },
+            { label: 'Works With Any Drive - Description', key: 'worksWithAnyDesc', multiline: true },
+            { label: 'Technical Specs - Title', key: 'technicalSpecs' },
+            { label: 'Hardware - Title', key: 'hardware' },
+            { label: 'Hardware Spec 1', key: 'hwSpec1' },
+            { label: 'Hardware Spec 2', key: 'hwSpec2' },
+            { label: 'Hardware Spec 3', key: 'hwSpec3' },
+            { label: 'Hardware Spec 4', key: 'hwSpec4' },
+            { label: 'Hardware Spec 5', key: 'hwSpec5' },
+            { label: 'Software - Title', key: 'software' },
+            { label: 'Software Spec 1', key: 'swSpec1' },
+            { label: 'Software Spec 2', key: 'swSpec2' },
+            { label: 'Software Spec 3', key: 'swSpec3' },
+            { label: 'Software Spec 4', key: 'swSpec4' },
+            { label: 'Software Spec 5', key: 'swSpec5' },
+          ])}
+
+          {/* About Page Section */}
+          {renderSection('About Page', 'about', [
+            { label: 'Page Title', key: 'title' },
+            { label: 'Page Subtitle', key: 'subtitle', multiline: true },
+            { label: 'Our Story - Title', key: 'ourStory' },
+            { label: 'Story Paragraph 1', key: 'storyPara1', multiline: true },
+            { label: 'Story Paragraph 2', key: 'storyPara2', multiline: true },
+            { label: 'Our Mission - Title', key: 'ourMission' },
+            { label: 'Mission Description', key: 'missionDesc', multiline: true },
+            { label: 'Our Vision - Title', key: 'ourVision' },
+            { label: 'Vision Description', key: 'visionDesc', multiline: true },
+            { label: 'Our Values - Title', key: 'ourValues' },
+            { label: 'Values Description', key: 'valuesDesc', multiline: true },
+            { label: 'Why Physical - Title', key: 'whyPhysical' },
+            { label: 'Ransomware Title', key: 'ransomwareTitle' },
+            { label: 'Ransomware Description', key: 'ransomwareDesc', multiline: true },
+            { label: 'Privacy Title', key: 'privacyTitle' },
+            { label: 'Privacy Description', key: 'privacyDesc', multiline: true },
+            { label: 'Longevity Title', key: 'longevityTitle' },
+            { label: 'Longevity Description', key: 'longevityDesc', multiline: true },
+            { label: 'Zero Maintenance Title', key: 'zeroMaintenanceTitle' },
+            { label: 'Zero Maintenance Description', key: 'zeroMaintenanceDesc', multiline: true },
+            { label: 'Get In Touch - Title', key: 'getInTouch' },
+            { label: 'Get In Touch - Description', key: 'getInTouchDesc', multiline: true },
+            { label: 'Contact Button Text', key: 'contactButton' },
+          ])}
+
+          {/* Download Page Section */}
+          {renderSection('Download Page', 'download', [
+            { label: 'Page Title', key: 'title' },
+            { label: 'Page Subtitle', key: 'subtitle', multiline: true },
+            { label: 'Software Title', key: 'software' },
+            { label: 'Version', key: 'version' },
+            { label: 'Windows Text', key: 'windows' },
+            { label: 'Download Software Button', key: 'downloadSoftware' },
+            { label: 'User Manual Title', key: 'userManual' },
+            { label: 'Instructions PDF', key: 'instructionsPdf' },
+            { label: 'Complete Guide Text', key: 'completeGuide' },
+            { label: 'Download Manual Button', key: 'downloadManual' },
+            { label: 'System Requirements Title', key: 'systemRequirements' },
+            { label: 'Requirement 1', key: 'req1' },
+            { label: 'Requirement 2', key: 'req2' },
+            { label: 'Requirement 3', key: 'req3' },
+            { label: 'Requirement 4', key: 'req4' },
+            { label: 'Installation Steps Title', key: 'installationSteps' },
+            { label: 'Step 1', key: 'step1' },
+            { label: 'Step 2', key: 'step2' },
+            { label: 'Step 3', key: 'step3' },
+            { label: 'Step 4', key: 'step4' },
+            { label: 'Changelog Title', key: 'changelog' },
+            { label: 'Version Date', key: 'versionDate' },
+            { label: 'Change 1', key: 'change1' },
+            { label: 'Change 2', key: 'change2' },
+            { label: 'Change 3', key: 'change3' },
+            { label: 'Change 4', key: 'change4' },
+            { label: 'Change 5', key: 'change5' },
+            { label: 'Need Help Text', key: 'needHelp', multiline: true },
+            { label: 'Contact Support Button', key: 'contactSupport' },
+          ])}
+
+          {/* Contact Page Section */}
+          {renderSection('Contact Page', 'contact', [
+            { label: 'Page Title', key: 'title' },
+            { label: 'Page Subtitle', key: 'subtitle', multiline: true },
+            { label: 'Name Label', key: 'name' },
+            { label: 'Name Placeholder', key: 'namePlaceholder' },
+            { label: 'Email Label', key: 'email' },
+            { label: 'Email Placeholder', key: 'emailPlaceholder' },
+            { label: 'Phone Label', key: 'phone' },
+            { label: 'Phone Placeholder', key: 'phonePlaceholder' },
+            { label: 'Message Label', key: 'message' },
+            { label: 'Message Placeholder', key: 'messagePlaceholder', multiline: true },
+            { label: 'Send Button', key: 'send' },
+            { label: 'Sending Text', key: 'sending' },
+            { label: 'Success Title', key: 'success' },
+            { label: 'Success Message', key: 'successMessage', multiline: true },
+            { label: 'Send Another Button', key: 'sendAnother' },
+          ])}
+
           {/* Footer Section */}
           {renderSection('Footer', 'footer', [
             { label: 'Tagline', key: 'tagline', multiline: true },
             { label: 'Products Section Title', key: 'products' },
+            { label: 'Basic Product Link', key: 'basicProduct' },
+            { label: 'Pro Product Link', key: 'proProduct' },
             { label: 'Support Section Title', key: 'support' },
+            { label: 'Download Link', key: 'download' },
+            { label: 'Contact Link', key: 'contact' },
             { label: 'Copyright Text', key: 'rights' },
           ])}
         </div>
