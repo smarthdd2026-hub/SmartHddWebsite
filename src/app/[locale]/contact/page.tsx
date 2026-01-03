@@ -104,7 +104,7 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                      placeholder="John Doe"
+                      placeholder={t('namePlaceholder')}
                     />
                   </div>
                   <div>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                      placeholder="john@example.com"
+                      placeholder={t('emailPlaceholder')}
                     />
                   </div>
                 </div>
@@ -135,7 +135,7 @@ export default function ContactPage() {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                    placeholder="+972 50-123-4567"
+                    placeholder={t('phonePlaceholder')}
                   />
                 </div>
 
@@ -151,7 +151,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     rows={6}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary resize-none"
-                    placeholder="Tell us about your inquiry..."
+                    placeholder={t('messagePlaceholder')}
                   />
                 </div>
 

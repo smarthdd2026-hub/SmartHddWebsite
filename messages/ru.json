@@ -192,7 +192,11 @@
     "sending": "Отправка...",
     "success": "Сообщение отправлено!",
     "successMessage": "Спасибо, что связались с нами. Мы ответим вам в течение 24-48 часов.",
-    "sendAnother": "Отправить еще одно сообщение"
+    "sendAnother": "Отправить еще одно сообщение",
+    "namePlaceholder": "Иван Иванов",
+    "emailPlaceholder": "ivan@example.com",
+    "phonePlaceholder": "+7 999-123-4567",
+    "messagePlaceholder": "Расскажите о вашем запросе..."
   },
   "footer": {
     "tagline": "Ваши данные, физически защищены",

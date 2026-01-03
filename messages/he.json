@@ -192,7 +192,11 @@
     "sending": "שולח...",
     "success": "ההודעה נשלחה!",
     "successMessage": "תודה שיצרת איתנו קשר. נחזור אליך תוך 24-48 שעות.",
-    "sendAnother": "שלח הודעה נוספת"
+    "sendAnother": "שלח הודעה נוספת",
+    "namePlaceholder": "ישראל ישראלי",
+    "emailPlaceholder": "israel@example.com",
+    "phonePlaceholder": "050-123-4567",
+    "messagePlaceholder": "ספר לנו על הפנייה שלך..."
   },
   "footer": {
     "tagline": "הנתונים שלך, מוגנים פיזית",

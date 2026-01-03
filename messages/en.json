@@ -192,7 +192,11 @@
     "sending": "Sending...",
     "success": "Message Sent!",
     "successMessage": "Thank you for contacting us. We'll get back to you within 24-48 hours.",
-    "sendAnother": "Send another message"
+    "sendAnother": "Send another message",
+    "namePlaceholder": "John Doe",
+    "emailPlaceholder": "john@example.com",
+    "phonePlaceholder": "+972 50-123-4567",
+    "messagePlaceholder": "Tell us about your inquiry..."
   },
   "footer": {
     "tagline": "Your Data, Physically Protected",

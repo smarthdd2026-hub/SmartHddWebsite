@@ -2,6 +2,7 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import DynamicImage from './DynamicImage';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -14,9 +15,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">S</span>
-              </div>
+              <DynamicImage
+                basePath="/images/logo"
+                alt="SmartHDD Logo"
+                className="w-10 h-10 object-contain"
+                fallback={
+                  <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">S</span>
+                  </div>
+                }
+              />
               <span className="text-xl font-bold text-white">SmartHDD</span>
             </div>
             <p className="text-sm mb-4">{t('tagline')}</p>
