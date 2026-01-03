@@ -1,4 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
@@ -12,37 +15,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // For now, we'll just log the contact form submission
-    // In production, you would integrate with an email service like:
-    // - Resend (https://resend.com) - Free tier available
-    // - SendGrid
-    // - AWS SES
-    // - Mailgun
-    
-    console.log('Contact form submission:', {
-      name,
-      email,
-      phone,
-      message,
-      timestamp: new Date().toISOString()
+    // Send email using Resend
+    await resend.emails.send({
+      from: 'SmartHDD Contact <onboarding@resend.dev>',
+      to: 'smarthdd2026@gmail.com',
+      replyTo: email,
+      subject: `Contact Form: ${name}`,
+      html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `
     });
-
-    // TODO: Integrate with email service
-    // Example with Resend:
-    // const resend = new Resend(process.env.RESEND_API_KEY);
-    // await resend.emails.send({
-    //   from: 'noreply@smarthdd.com',
-    //   to: 'smarthdd2026@gmail.com',
-    //   subject: `Contact Form: ${name}`,
-    //   html: `
-    //     <h2>New Contact Form Submission</h2>
-    //     <p><strong>Name:</strong> ${name}</p>
-    //     <p><strong>Email:</strong> ${email}</p>
-    //     <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-    //     <p><strong>Message:</strong></p>
-    //     <p>${message}</p>
-    //   `
-    // });
 
     return NextResponse.json({ 
       success: true,
