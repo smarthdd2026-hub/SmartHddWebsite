@@ -3,6 +3,7 @@ import { Plug, Calendar, Shield, HardDrive, Usb, Clock } from 'lucide-react';
 
 export default function HowItWorksPage() {
   const t = useTranslations('howItWorks');
+  const tExt = useTranslations('howItWorksExtended');
 
   return (
     <div className="pt-24 pb-20">
@@ -12,7 +13,7 @@ export default function HowItWorksPage() {
             {t('title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Simple setup, automated protection, complete peace of mind
+            {tExt('subtitle')}
           </p>
         </div>
 
@@ -67,7 +68,7 @@ export default function HowItWorksPage() {
         {/* Detailed Features */}
         <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 md:p-12 mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            What Makes SmartHDD Unique?
+            {tExt('whatMakesUnique')}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -78,11 +79,10 @@ export default function HowItWorksPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
-                    Physical Disconnection
+                    {tExt('physicalDisconnection')}
                   </h3>
                   <p className="text-gray-600">
-                    Unlike software solutions, SmartHDD physically disconnects your drives using hardware relays. 
-                    When disconnected, your drives are completely invisible to your computer and any threats.
+                    {tExt('physicalDesc')}
                   </p>
                 </div>
               </div>
@@ -95,11 +95,10 @@ export default function HowItWorksPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
-                    Smart Scheduling
+                    {tExt('smartScheduling')}
                   </h3>
                   <p className="text-gray-600">
-                    Set different schedules for different backup types. Daily for documents, weekly for photos, 
-                    monthly for archives. Full control over your backup strategy.
+                    {tExt('schedulingDesc')}
                   </p>
                 </div>
               </div>
@@ -112,11 +111,10 @@ export default function HowItWorksPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
-                    Zero Touch Operation
+                    {tExt('zeroTouch')}
                   </h3>
                   <p className="text-gray-600">
-                    After initial setup, you never need to touch your backup drives again. SmartHDD handles 
-                    everything automatically, exactly when scheduled.
+                    {tExt('zeroTouchDesc')}
                   </p>
                 </div>
               </div>
@@ -129,11 +127,10 @@ export default function HowItWorksPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
-                    Works With Any Drive
+                    {tExt('worksWithAny')}
                   </h3>
                   <p className="text-gray-600">
-                    Compatible with all USB flash drives, external HDDs, and SSDs. Use the drives you already 
-                    own - no special hardware required.
+                    {tExt('worksWithAnyDesc')}
                   </p>
                 </div>
               </div>
@@ -144,27 +141,27 @@ export default function HowItWorksPage() {
         {/* Technical Specs */}
         <div className="bg-white rounded-2xl p-8 shadow-lg">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Technical Specifications
+            {tExt('technicalSpecs')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Hardware</h4>
+              <h4 className="font-semibold text-gray-900 mb-3">{tExt('hardware')}</h4>
               <ul className="space-y-2 text-gray-600">
-                <li>• USB 2.0/3.0 compatible</li>
-                <li>• Hardware-based physical switching</li>
-                <li>• Supports up to 2 drives (Pro version)</li>
-                <li>• Low power consumption</li>
-                <li>• Compact design</li>
+                <li>• {tExt('hwSpec1')}</li>
+                <li>• {tExt('hwSpec2')}</li>
+                <li>• {tExt('hwSpec3')}</li>
+                <li>• {tExt('hwSpec4')}</li>
+                <li>• {tExt('hwSpec5')}</li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Software</h4>
+              <h4 className="font-semibold text-gray-900 mb-3">{tExt('software')}</h4>
               <ul className="space-y-2 text-gray-600">
-                <li>• Windows 10/11 compatible</li>
-                <li>• Full & incremental backups</li>
-                <li>• Flexible scheduling options</li>
-                <li>• Multi-language interface</li>
-                <li>• Real-time status monitoring</li>
+                <li>• {tExt('swSpec1')}</li>
+                <li>• {tExt('swSpec2')}</li>
+                <li>• {tExt('swSpec3')}</li>
+                <li>• {tExt('swSpec4')}</li>
+                <li>• {tExt('swSpec5')}</li>
               </ul>
             </div>
           </div>
