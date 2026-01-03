@@ -46,7 +46,7 @@ export default function LanguageSwitcher() {
         aria-label="Change language"
       >
         <Globe size={20} />
-        <span className="text-sm font-medium">{currentLanguage?.flag}</span>
+        <span className="text-sm font-medium">{currentLanguage?.name}</span>
       </button>
 
       {isOpen && (

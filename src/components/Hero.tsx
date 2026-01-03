@@ -58,7 +58,7 @@ export default function Hero() {
                 <iframe
                   width="100%"
                   height="100%"
-                  src={`https://www.youtube.com/embed/${youtubeId}`}
+                  src={`https://www.youtube.com/embed/${youtubeId}?vq=hd1080`}
                   title="SmartHDD Video"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
