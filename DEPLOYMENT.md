@@ -17,8 +17,15 @@ git push origin main
    - **Framework preset:** Next.js
    - **Build command:** `npm run build`
    - **Build output directory:** `.next`
-   - **Node version:** `18` or higher
+   - **Root directory:** `/` (leave empty or set to root)
+   - **Environment variables:** None required
+   - **IMPORTANT:** Leave "Deploy command" empty - Cloudflare will auto-detect Next.js
 5. Click **Save and Deploy**
+
+### ⚠️ Important Notes:
+- **Do NOT set a custom deploy command** - Cloudflare Pages has built-in Next.js support
+- The build will use Cloudflare's automatic Next.js adapter
+- If you see wrangler errors, make sure no deploy command is set in Cloudflare dashboard
 
 ## 🔄 Automatic Deployments
 

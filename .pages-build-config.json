@@ -1,0 +1,9 @@
+{
+  "framework": {
+    "name": "nextjs"
+  },
+  "build": {
+    "command": "npm run build",
+    "output_directory": ".next"
+  }
+}
