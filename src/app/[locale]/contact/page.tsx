@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Send } from 'lucide-react';
 
 export default function ContactPage() {
-  const t = useTranslations();
+  const t = useTranslations('contact');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -65,10 +65,10 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Contact Us
+            {t('title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Have questions about SmartHDD? We're here to help!
+            {t('subtitle')}
           </p>
         </div>
 
@@ -78,15 +78,15 @@ export default function ContactPage() {
               <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
                 <Send className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{t('success')}</h3>
               <p className="text-gray-600">
-                Thank you for contacting us. We'll get back to you within 24-48 hours.
+                {t('successMessage')}
               </p>
               <button
                 onClick={() => setSubmitted(false)}
                 className="mt-6 text-accent font-semibold hover:underline"
               >
-                Send another message
+                {t('sendAnother')}
               </button>
             </div>
           ) : (
@@ -94,7 +94,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      Full Name *
+                      {t('name')} *
                     </label>
                     <input
                       type="text"
@@ -109,7 +109,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email *
+                      {t('email')} *
                     </label>
                     <input
                       type="email"
@@ -126,7 +126,7 @@ export default function ContactPage() {
 
                 <div className="mb-6">
                   <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone (Optional)
+                    {t('phone')}
                   </label>
                   <input
                     type="tel"
@@ -141,7 +141,7 @@ export default function ContactPage() {
 
                 <div className="mb-6">
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Message *
+                    {t('message')} *
                   </label>
                   <textarea
                     id="message"
@@ -163,12 +163,12 @@ export default function ContactPage() {
                   {isSubmitting ? (
                     <>
                       <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                      Sending...
+                      {t('sending')}
                     </>
                   ) : (
                     <>
                       <Send size={20} />
-                      Send Message
+                      {t('send')}
                     </>
                   )}
                 </button>
