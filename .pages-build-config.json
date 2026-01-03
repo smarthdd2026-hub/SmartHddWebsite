@@ -5,7 +5,7 @@
   },
   "build": {
     "command": "npm run build",
-    "output_directory": ".next"
+    "output_directory": "out"
   },
   "compatibility_flags": ["nodejs_compat"]
 }
