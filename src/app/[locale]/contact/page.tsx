@@ -19,24 +19,37 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
     
+    console.log('🔵 Starting form submission...');
+    console.log('📝 Form data:', formData);
+    
     try {
+      console.log('📡 Sending request to /api/contact');
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
 
+      console.log('📥 Response status:', response.status);
+      console.log('📥 Response ok:', response.ok);
+      
+      const responseData = await response.json();
+      console.log('📦 Response data:', responseData);
+
       if (response.ok) {
+        console.log('✅ Form submitted successfully!');
         setSubmitted(true);
         setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
-        alert('Failed to send message. Please try again.');
+        console.error('❌ Server error:', responseData);
+        alert(`Failed to send message: ${responseData.error || 'Unknown error'}\nDetails: ${responseData.details || 'No details'}`);
       }
     } catch (error) {
-      console.error('Contact form error:', error);
-      alert('Failed to send message. Please try again.');
+      console.error('❌ Contact form error:', error);
+      alert(`Failed to send message. Error: ${error instanceof Error ? error.message : 'Unknown error'}`);
     } finally {
       setIsSubmitting(false);
+      console.log('🔵 Form submission complete');
     }
   };
 
