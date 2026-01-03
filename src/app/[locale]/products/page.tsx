@@ -12,7 +12,7 @@ export default function ProductsPage() {
             {t('title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Choose the SmartHDD model that fits your backup needs
+            {t('pageSubtitle')}
           </p>
         </div>
 
@@ -26,66 +26,66 @@ export default function ProductsPage() {
             {t('note')}
           </p>
           <p className="text-amber-800">
-            SmartHDD works with any standard USB flash drive or external HDD you already own.
+            {t('noteDesc')}
           </p>
         </div>
 
         <div className="bg-white rounded-2xl p-8 shadow-lg">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Feature Comparison
+            {t('featureComparison')}
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
                 <tr className="border-b-2 border-gray-200">
-                  <th className="text-left py-4 px-4 font-semibold text-gray-900">Feature</th>
+                  <th className="text-left py-4 px-4 font-semibold text-gray-900">{t('featureHeader')}</th>
                   <th className="text-center py-4 px-4 font-semibold text-gray-900">Basic</th>
                   <th className="text-center py-4 px-4 font-semibold text-gray-900 bg-primary-50">Pro</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
                 <tr>
-                  <td className="py-4 px-4 text-gray-700">USB Ports</td>
+                  <td className="py-4 px-4 text-gray-700">{t('usbPorts')}</td>
                   <td className="py-4 px-4 text-center">1</td>
                   <td className="py-4 px-4 text-center bg-primary-50">2</td>
                 </tr>
                 <tr>
-                  <td className="py-4 px-4 text-gray-700">Physical Disconnection</td>
+                  <td className="py-4 px-4 text-gray-700">{t('physicalDisconnection')}</td>
                   <td className="py-4 px-4 text-center text-accent">✓</td>
                   <td className="py-4 px-4 text-center text-accent bg-primary-50">✓</td>
                 </tr>
                 <tr>
-                  <td className="py-4 px-4 text-gray-700">Automated Scheduling</td>
+                  <td className="py-4 px-4 text-gray-700">{t('automatedScheduling')}</td>
                   <td className="py-4 px-4 text-center text-accent">✓</td>
                   <td className="py-4 px-4 text-center text-accent bg-primary-50">✓</td>
                 </tr>
                 <tr>
-                  <td className="py-4 px-4 text-gray-700">Full & Incremental Backups</td>
+                  <td className="py-4 px-4 text-gray-700">{t('fullIncrementalBackups')}</td>
                   <td className="py-4 px-4 text-center text-accent">✓</td>
                   <td className="py-4 px-4 text-center text-accent bg-primary-50">✓</td>
                 </tr>
                 <tr>
-                  <td className="py-4 px-4 text-gray-700">Daily/Weekly/Monthly Options</td>
+                  <td className="py-4 px-4 text-gray-700">{t('schedulingOptions')}</td>
                   <td className="py-4 px-4 text-center text-accent">✓</td>
                   <td className="py-4 px-4 text-center text-accent bg-primary-50">✓</td>
                 </tr>
                 <tr>
-                  <td className="py-4 px-4 text-gray-700">Independent Schedules Per Drive</td>
+                  <td className="py-4 px-4 text-gray-700">{t('independentSchedules')}</td>
                   <td className="py-4 px-4 text-center text-gray-400">—</td>
                   <td className="py-4 px-4 text-center text-accent bg-primary-50">✓</td>
                 </tr>
                 <tr>
-                  <td className="py-4 px-4 text-gray-700">Advanced Rotation Strategy</td>
+                  <td className="py-4 px-4 text-gray-700">{t('advancedRotation')}</td>
                   <td className="py-4 px-4 text-center text-gray-400">—</td>
                   <td className="py-4 px-4 text-center text-accent bg-primary-50">✓</td>
                 </tr>
                 <tr>
-                  <td className="py-4 px-4 text-gray-700">Redundant Backup Support</td>
+                  <td className="py-4 px-4 text-gray-700">{t('redundantBackup')}</td>
                   <td className="py-4 px-4 text-center text-gray-400">—</td>
                   <td className="py-4 px-4 text-center text-accent bg-primary-50">✓</td>
                 </tr>
                 <tr className="border-t-2 border-gray-200 font-bold">
-                  <td className="py-4 px-4 text-gray-900">Price</td>
+                  <td className="py-4 px-4 text-gray-900">{t('price')}</td>
                   <td className="py-4 px-4 text-center text-primary">₪699</td>
                   <td className="py-4 px-4 text-center text-primary bg-primary-50">₪1,299</td>
                 </tr>

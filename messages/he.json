@@ -60,7 +60,20 @@
       "cta": "צור קשר",
       "popular": "הכי פופולרי"
     },
-    "note": "כוננים לא כלולים. עובד עם כל כונן USB או דיסק קשיח חיצוני."
+    "note": "* כוננים לא כלולים. SmartHDD עובד עם כל כונן USB או דיסק קשיח חיצוני סטנדרטי.",
+    "pageSubtitle": "בחר את דגם SmartHDD שמתאים לצרכי הגיבוי שלך",
+    "noteDesc": "SmartHDD עובד עם כל כונן USB או דיסק קשיח חיצוני שכבר יש לך.",
+    "featureComparison": "השוואת תכונות",
+    "featureHeader": "תכונה",
+    "usbPorts": "יציאות USB",
+    "physicalDisconnection": "ניתוק פיזי",
+    "automatedScheduling": "תזמון אוטומטי",
+    "fullIncrementalBackups": "גיבויים מלאים ומצטברים",
+    "schedulingOptions": "אפשרויות יומי/שבועי/חודשי",
+    "independentSchedules": "לוחות זמנים עצמאיים לכל כונן",
+    "advancedRotation": "אסטרטגיית רוטציה מתקדמת",
+    "redundantBackup": "תמיכה בגיבוי כפול",
+    "price": "מחיר"
   },
   "howItWorks": {
     "title": "איך SmartHDD עובד",
@@ -108,7 +121,8 @@
     "zeroMaintenanceTitle": "אפס תחזוקה:",
     "zeroMaintenanceDesc": "הגדר את לוח הזמנים פעם אחת ולעולם לא תחשוב על גיבויים שוב. SmartHDD מטפל בהכל אוטומטית.",
     "getInTouch": "צור קשר",
-    "getInTouchDesc": "יש שאלות? רוצה ללמוד עוד? נשמח לשמוע ממך."
+    "getInTouchDesc": "יש שאלות? רוצה ללמוד עוד? נשמח לשמוע ממך.",
+    "contactButton": "צור קשר"
   },
   "download": {
     "title": "הורד תוכנת SmartHDD",
@@ -185,6 +199,10 @@
     "products": "מוצרים",
     "support": "תמיכה",
     "legal": "משפטי",
-    "rights": "כל הזכויות שמורות."
+    "rights": "כל הזכויות שמורות.",
+    "basicProduct": "SmartHDD Basic",
+    "proProduct": "SmartHDD Pro",
+    "download": "הורדה",
+    "contact": "צור קשר"
   }
 }

@@ -60,7 +60,20 @@
       "cta": "Contact Us",
       "popular": "Most Popular"
     },
-    "note": "Drives not included. Works with any USB flash drive or external HDD."
+    "note": "* Drives not included. SmartHDD works with any standard USB flash drive or external HDD.",
+    "pageSubtitle": "Choose the SmartHDD model that fits your backup needs",
+    "noteDesc": "SmartHDD works with any standard USB flash drive or external HDD you already own.",
+    "featureComparison": "Feature Comparison",
+    "featureHeader": "Feature",
+    "usbPorts": "USB Ports",
+    "physicalDisconnection": "Physical Disconnection",
+    "automatedScheduling": "Automated Scheduling",
+    "fullIncrementalBackups": "Full & Incremental Backups",
+    "schedulingOptions": "Daily/Weekly/Monthly Options",
+    "independentSchedules": "Independent Schedules Per Drive",
+    "advancedRotation": "Advanced Rotation Strategy",
+    "redundantBackup": "Redundant Backup Support",
+    "price": "Price"
   },
   "howItWorks": {
     "title": "How SmartHDD Works",
@@ -108,7 +121,8 @@
     "zeroMaintenanceTitle": "Zero Maintenance:",
     "zeroMaintenanceDesc": "Set your schedule once and never think about backups again. SmartHDD handles everything automatically.",
     "getInTouch": "Get in Touch",
-    "getInTouchDesc": "Have questions? Want to learn more? We'd love to hear from you."
+    "getInTouchDesc": "Have questions? Want to learn more? We'd love to hear from you.",
+    "contactButton": "Contact Us"
   },
   "download": {
     "title": "Download SmartHDD Software",
@@ -185,6 +199,10 @@
     "products": "Products",
     "support": "Support",
     "legal": "Legal",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "basicProduct": "SmartHDD Basic",
+    "proProduct": "SmartHDD Pro",
+    "download": "Download",
+    "contact": "Contact"
   }
 }

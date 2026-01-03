@@ -27,12 +27,12 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href={`/${locale}/products`} className="hover:text-white transition-colors">
-                  SmartHDD Basic
+                  {t('basicProduct')}
                 </Link>
               </li>
               <li>
                 <Link href={`/${locale}/products`} className="hover:text-white transition-colors">
-                  SmartHDD Pro
+                  {t('proProduct')}
                 </Link>
               </li>
             </ul>
@@ -43,12 +43,12 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href={`/${locale}/download`} className="hover:text-white transition-colors">
-                  Download
+                  {t('download')}
                 </Link>
               </li>
               <li>
                 <Link href={`/${locale}/contact`} className="hover:text-white transition-colors">
-                  Contact
+                  {t('contact')}
                 </Link>
               </li>
             </ul>

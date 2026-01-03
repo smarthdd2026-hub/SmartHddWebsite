@@ -1,8 +1,11 @@
-import { Shield, Users, Target, Mail } from 'lucide-react';
+import { Shield, Users, Target } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { useLocale } from 'next-intl';
 
 export default function AboutPage() {
   const t = useTranslations('about');
+  const locale = useLocale();
   return (
     <div className="pt-24 pb-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -81,12 +84,12 @@ export default function AboutPage() {
             <p className="mb-6">
               {t('getInTouchDesc')}
             </p>
-            <div className="flex items-center justify-center gap-2 text-primary-100">
-              <Mail className="w-5 h-5" />
-              <a href="mailto:smarthdd2026@gmail.com" className="hover:text-white transition-colors">
-                smarthdd2026@gmail.com
-              </a>
-            </div>
+            <Link
+              href={`/${locale}/contact`}
+              className="inline-block px-8 py-3 bg-white text-primary-900 rounded-lg font-semibold hover:bg-primary-100 transition-colors"
+            >
+              {t('contactButton')}
+            </Link>
           </div>
         </div>
       </div>
