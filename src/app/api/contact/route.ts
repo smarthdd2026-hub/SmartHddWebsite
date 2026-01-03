@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 export async function POST(request: Request) {
   try {
     const { name, email, phone, message } = await request.json();
