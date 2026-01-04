@@ -51,7 +51,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-16 relative">
+        <div className="mt-10 relative">
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 max-w-4xl mx-auto">
             <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center overflow-hidden">
               {youtubeId ? (

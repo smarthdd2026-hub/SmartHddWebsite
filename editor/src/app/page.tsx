@@ -536,7 +536,7 @@ export default function ContentEditor() {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Logo Upload */}
+            {/* Header Logo Upload */}
             <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 hover:border-primary transition-colors">
               <input
                 type="file"
@@ -548,15 +548,41 @@ export default function ContentEditor() {
               <label htmlFor="logo-upload" className="cursor-pointer">
                 {images['logo'] ? (
                   <div className="space-y-2">
-                    <img src={images['logo']} alt="Logo preview" className="w-32 h-32 object-contain mx-auto rounded" />
-                    <p className="text-sm font-medium text-green-600">✓ Logo uploaded</p>
+                    <img src={images['logo']} alt="Header Logo preview" className="w-32 h-32 object-contain mx-auto rounded" />
+                    <p className="text-sm font-medium text-green-600">✓ Header Logo uploaded</p>
                     <p className="text-xs text-gray-500">Click to change</p>
                   </div>
                 ) : (
                   <div>
                     <Upload className="mx-auto mb-2 text-gray-400" size={32} />
-                    <p className="text-sm font-medium text-gray-700">Logo Image</p>
-                    <p className="text-xs text-gray-500 mt-1">Click to upload</p>
+                    <p className="text-sm font-medium text-gray-700">Header Logo</p>
+                    <p className="text-xs text-gray-500 mt-1">Displayed in the navigation bar</p>
+                  </div>
+                )}
+              </label>
+            </div>
+
+            {/* Footer Logo Upload */}
+            <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 hover:border-primary transition-colors">
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => e.target.files?.[0] && handleImageUpload('logo-footer', e.target.files[0])}
+                className="hidden"
+                id="logo-footer-upload"
+              />
+              <label htmlFor="logo-footer-upload" className="cursor-pointer">
+                {images['logo-footer'] ? (
+                  <div className="space-y-2">
+                    <img src={images['logo-footer']} alt="Footer Logo preview" className="w-32 h-32 object-contain mx-auto rounded" />
+                    <p className="text-sm font-medium text-green-600">✓ Footer Logo uploaded</p>
+                    <p className="text-xs text-gray-500">Click to change</p>
+                  </div>
+                ) : (
+                  <div>
+                    <Upload className="mx-auto mb-2 text-gray-400" size={32} />
+                    <p className="text-sm font-medium text-gray-700">Footer Logo</p>
+                    <p className="text-xs text-gray-500 mt-1">Displayed in the footer (optional, uses header logo if not set)</p>
                   </div>
                 )}
               </label>

@@ -93,9 +93,9 @@ export default function HomePage() {
             {problems.map((problem, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-2xl shadow-lg border-2 border-red-100 hover:border-red-300 transition-colors"
+                className="bg-white p-8 rounded-2xl shadow-lg border-2 border-red-100 hover:border-red-300 transition-colors text-center"
               >
-                <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <problem.icon className="w-6 h-6 text-red-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
