@@ -86,6 +86,9 @@ export default function HowItWorksPage() {
               }
             />
           </div>
+          <p className="text-sm text-gray-500 text-center mt-4 italic">
+            {tExt('connectionNote')}
+          </p>
         </div>
 
         {/* Detailed Features */}

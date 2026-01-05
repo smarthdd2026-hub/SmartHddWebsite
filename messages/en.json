@@ -180,7 +180,8 @@
     "swSpec3": "Flexible scheduling options",
     "swSpec4": "Multi-language interface",
     "swSpec5": "Real-time status monitoring",
-    "connectionDiagram": "Connection Diagram"
+    "connectionDiagram": "Connection Diagram",
+    "connectionNote": "Note: The diagram shows SmartHDD Pro with dual drive support. SmartHDD Basic supports a single external drive connection."
   },
   "contact": {
     "title": "Contact Us",

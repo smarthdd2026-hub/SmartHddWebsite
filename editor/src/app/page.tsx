@@ -410,6 +410,7 @@ export default function ContentEditor() {
           {renderSection('How It Works Page - Extended', 'howItWorksExtended', [
             { label: 'Page Subtitle', key: 'subtitle', multiline: true },
             { label: 'Connection Diagram Title', key: 'connectionDiagram' },
+            { label: 'Connection Diagram Note', key: 'connectionNote', multiline: true },
             { label: 'What Makes Unique - Title', key: 'whatMakesUnique' },
             { label: 'Physical Disconnection - Title', key: 'physicalDisconnection' },
             { label: 'Physical Disconnection - Description', key: 'physicalDesc', multiline: true },

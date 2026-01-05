@@ -180,7 +180,8 @@
     "swSpec3": "אפשרויות תזמון גמישות",
     "swSpec4": "ממשק רב-לשוני",
     "swSpec5": "ניטור סטטוס בזמן אמת",
-    "connectionDiagram": "תרשים חיבור"
+    "connectionDiagram": "תרשים חיבור",
+    "connectionNote": "הערה: התרשים מציג את SmartHDD Pro עם תמיכה בשני כוננים. SmartHDD Basic תומך בחיבור כונן חיצוני אחד בלבד."
   },
   "contact": {
     "title": "צור קשר",
