@@ -409,6 +409,7 @@ export default function ContentEditor() {
           {/* How It Works Extended Section */}
           {renderSection('How It Works Page - Extended', 'howItWorksExtended', [
             { label: 'Page Subtitle', key: 'subtitle', multiline: true },
+            { label: 'Connection Diagram Title', key: 'connectionDiagram' },
             { label: 'What Makes Unique - Title', key: 'whatMakesUnique' },
             { label: 'Physical Disconnection - Title', key: 'physicalDisconnection' },
             { label: 'Physical Disconnection - Description', key: 'physicalDesc', multiline: true },
@@ -609,6 +610,84 @@ export default function ContentEditor() {
                     <Upload className="mx-auto mb-2 text-gray-400" size={32} />
                     <p className="text-sm font-medium text-gray-700">Hero Image</p>
                     <p className="text-xs text-gray-500 mt-1">Click to upload</p>
+                  </div>
+                )}
+              </label>
+            </div>
+
+            {/* Product Basic Image Upload */}
+            <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 hover:border-primary transition-colors">
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => e.target.files?.[0] && handleImageUpload('product-basic', e.target.files[0])}
+                className="hidden"
+                id="product-basic-upload"
+              />
+              <label htmlFor="product-basic-upload" className="cursor-pointer">
+                {images['product-basic'] ? (
+                  <div className="space-y-2">
+                    <img src={images['product-basic']} alt="Product Basic preview" className="w-full h-32 object-contain mx-auto rounded" />
+                    <p className="text-sm font-medium text-green-600">✓ Basic product image uploaded</p>
+                    <p className="text-xs text-gray-500">Click to change</p>
+                  </div>
+                ) : (
+                  <div>
+                    <Upload className="mx-auto mb-2 text-gray-400" size={32} />
+                    <p className="text-sm font-medium text-gray-700">SmartHDD Basic Image</p>
+                    <p className="text-xs text-gray-500 mt-1">Displayed on Products page</p>
+                  </div>
+                )}
+              </label>
+            </div>
+
+            {/* Product Pro Image Upload */}
+            <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 hover:border-primary transition-colors">
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => e.target.files?.[0] && handleImageUpload('product-pro', e.target.files[0])}
+                className="hidden"
+                id="product-pro-upload"
+              />
+              <label htmlFor="product-pro-upload" className="cursor-pointer">
+                {images['product-pro'] ? (
+                  <div className="space-y-2">
+                    <img src={images['product-pro']} alt="Product Pro preview" className="w-full h-32 object-contain mx-auto rounded" />
+                    <p className="text-sm font-medium text-green-600">✓ Pro product image uploaded</p>
+                    <p className="text-xs text-gray-500">Click to change</p>
+                  </div>
+                ) : (
+                  <div>
+                    <Upload className="mx-auto mb-2 text-gray-400" size={32} />
+                    <p className="text-sm font-medium text-gray-700">SmartHDD Pro Image</p>
+                    <p className="text-xs text-gray-500 mt-1">Displayed on Products page</p>
+                  </div>
+                )}
+              </label>
+            </div>
+
+            {/* Connection Diagram Upload */}
+            <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 hover:border-primary transition-colors">
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => e.target.files?.[0] && handleImageUpload('connection-diagram', e.target.files[0])}
+                className="hidden"
+                id="connection-diagram-upload"
+              />
+              <label htmlFor="connection-diagram-upload" className="cursor-pointer">
+                {images['connection-diagram'] ? (
+                  <div className="space-y-2">
+                    <img src={images['connection-diagram']} alt="Connection Diagram preview" className="w-full h-32 object-contain mx-auto rounded" />
+                    <p className="text-sm font-medium text-green-600">✓ Connection diagram uploaded</p>
+                    <p className="text-xs text-gray-500">Click to change</p>
+                  </div>
+                ) : (
+                  <div>
+                    <Upload className="mx-auto mb-2 text-gray-400" size={32} />
+                    <p className="text-sm font-medium text-gray-700">Connection Diagram</p>
+                    <p className="text-xs text-gray-500 mt-1">Displayed on How It Works page</p>
                   </div>
                 )}
               </label>

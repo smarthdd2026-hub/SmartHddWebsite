@@ -4,6 +4,7 @@ import { Shield, Clock, Lock, Zap, HardDrive, CheckCircle } from 'lucide-react';
 import Hero from '@/components/Hero';
 import ProductCard from '@/components/ProductCard';
 import FeatureCard from '@/components/FeatureCard';
+import DynamicImage from '@/components/DynamicImage';
 
 export default function HomePage() {
   const t = useTranslations();
@@ -139,8 +140,28 @@ export default function HomePage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <ProductCard type="basic" />
-            <ProductCard type="pro" />
+            <div className="flex flex-col">
+              <div className="bg-white/50 rounded-2xl p-6 mb-4 flex items-center justify-center min-h-[280px]">
+                <DynamicImage
+                  basePath="/images/product-basic"
+                  alt="SmartHDD Basic"
+                  className="max-h-[250px] w-auto object-contain"
+                  fallback={<div />}
+                />
+              </div>
+              <ProductCard type="basic" />
+            </div>
+            <div className="flex flex-col">
+              <div className="bg-white/50 rounded-2xl p-6 mb-4 flex items-center justify-center min-h-[280px]">
+                <DynamicImage
+                  basePath="/images/product-pro"
+                  alt="SmartHDD Pro"
+                  className="max-h-[250px] w-auto object-contain"
+                  fallback={<div />}
+                />
+              </div>
+              <ProductCard type="pro" />
+            </div>
           </div>
           <p className="text-center text-gray-600 mt-8">{t('products.note')}</p>
         </div>

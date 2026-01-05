@@ -179,7 +179,8 @@
     "swSpec2": "Full & incremental backups",
     "swSpec3": "Flexible scheduling options",
     "swSpec4": "Multi-language interface",
-    "swSpec5": "Real-time status monitoring"
+    "swSpec5": "Real-time status monitoring",
+    "connectionDiagram": "Connection Diagram"
   },
   "contact": {
     "title": "Contact Us",

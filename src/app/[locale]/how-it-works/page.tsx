@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Plug, Calendar, Shield, HardDrive, Usb, Clock } from 'lucide-react';
+import DynamicImage from '@/components/DynamicImage';
 
 export default function HowItWorksPage() {
   const t = useTranslations('howItWorks');
@@ -62,6 +63,28 @@ export default function HowItWorksPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">{t('step3')}</h3>
               <p className="text-gray-600">{t('step3Desc')}</p>
             </div>
+          </div>
+        </div>
+
+        {/* Connection Diagram */}
+        <div className="bg-white rounded-2xl p-8 shadow-lg mb-20">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            {tExt('connectionDiagram') || 'Connection Diagram'}
+          </h2>
+          <div className="flex items-center justify-center">
+            <DynamicImage
+              basePath="/images/connection-diagram"
+              alt="SmartHDD Connection Diagram"
+              className="max-w-full max-h-[400px] object-contain"
+              fallback={
+                <div className="text-center text-gray-400 py-12">
+                  <div className="w-24 h-24 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <span className="text-4xl">📊</span>
+                  </div>
+                  <p className="text-sm">Upload connection diagram image</p>
+                </div>
+              }
+            />
           </div>
         </div>
 

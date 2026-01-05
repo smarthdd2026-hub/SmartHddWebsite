@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import ProductCard from '@/components/ProductCard';
+import DynamicImage from '@/components/DynamicImage';
 
 export default function ProductsPage() {
   const t = useTranslations('products');
@@ -18,8 +19,42 @@ export default function ProductsPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
-          <ProductCard type="basic" />
-          <ProductCard type="pro" />
+          <div className="flex flex-col">
+            <div className="bg-gray-50 rounded-2xl p-6 mb-4 flex items-center justify-center min-h-[280px]">
+              <DynamicImage
+                basePath="/images/product-basic"
+                alt="SmartHDD Basic"
+                className="max-h-[250px] w-auto object-contain"
+                fallback={
+                  <div className="text-center text-gray-400">
+                    <div className="w-24 h-24 bg-gray-200 rounded-xl flex items-center justify-center mx-auto mb-2">
+                      <span className="text-3xl">📦</span>
+                    </div>
+                    <p className="text-sm">Upload Basic product image</p>
+                  </div>
+                }
+              />
+            </div>
+            <ProductCard type="basic" />
+          </div>
+          <div className="flex flex-col">
+            <div className="bg-gray-50 rounded-2xl p-6 mb-4 flex items-center justify-center min-h-[280px]">
+              <DynamicImage
+                basePath="/images/product-pro"
+                alt="SmartHDD Pro"
+                className="max-h-[250px] w-auto object-contain"
+                fallback={
+                  <div className="text-center text-gray-400">
+                    <div className="w-24 h-24 bg-gray-200 rounded-xl flex items-center justify-center mx-auto mb-2">
+                      <span className="text-3xl">📦</span>
+                    </div>
+                    <p className="text-sm">Upload Pro product image</p>
+                  </div>
+                }
+              />
+            </div>
+            <ProductCard type="pro" />
+          </div>
         </div>
 
         <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-6 text-center mb-12">
