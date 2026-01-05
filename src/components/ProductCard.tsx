@@ -27,7 +27,7 @@ export default function ProductCard({ type }: ProductCardProps) {
   return (
     <div
       className={`relative bg-white rounded-3xl shadow-xl overflow-hidden ${
-        isPro ? 'ring-4 ring-accent scale-105' : ''
+        isPro ? 'ring-4 ring-accent md:scale-105' : ''
       }`}
     >
       {isPro && (
@@ -37,17 +37,17 @@ export default function ProductCard({ type }: ProductCardProps) {
         </div>
       )}
 
-      <div className="p-8">
-        <h3 className="text-2xl font-bold text-gray-900 mb-2">{t(`${type}.name`)}</h3>
-        <p className="text-gray-600 mb-4">{t(`${type}.subtitle`)}</p>
+      <div className="p-6 md:p-8">
+        <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">{t(`${type}.name`)}</h3>
+        <p className="text-sm md:text-base text-gray-600 mb-4">{t(`${type}.subtitle`)}</p>
 
         {showPrices && (
-          <div className="mb-6">
-            <span className="text-5xl font-bold text-primary">{t(`${type}.price`)}</span>
+          <div className="mb-4 md:mb-6">
+            <span className="text-4xl md:text-5xl font-bold text-primary">{t(`${type}.price`)}</span>
           </div>
         )}
 
-        <ul className="space-y-3 mb-8">
+        <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start gap-3">
               <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />

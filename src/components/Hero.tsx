@@ -21,7 +21,7 @@ export default function Hero() {
   const youtubeId = getYouTubeId(videoUrl);
 
   return (
-    <section className="relative pt-24 pb-20 bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-700 overflow-hidden">
+    <section className="relative pt-20 pb-12 md:pt-24 md:pb-20 bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-700 overflow-hidden">
       <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]" />
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,14 +36,14 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href={`/${locale}/download`}
-              className="inline-flex items-center px-8 py-4 text-lg font-semibold text-primary-900 bg-white rounded-full hover:bg-gray-100 transition-all hover:scale-105 shadow-xl"
+              className="inline-flex items-center px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold text-primary-900 bg-white rounded-full hover:bg-gray-100 transition-all hover:scale-105 shadow-xl"
             >
-              <Download className="mr-2" size={24} />
+              <Download className="mr-2" size={20} />
               {t('cta')}
             </Link>
             <Link
               href={`/${locale}/how-it-works`}
-              className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white/10 transition-all"
+              className="inline-flex items-center px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white/10 transition-all"
             >
               {t('ctaSecondary')}
               <ArrowRight className="ml-2" size={24} />
@@ -51,8 +51,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-10 relative">
-          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 max-w-4xl mx-auto">
+        <div className="mt-8 md:mt-10 relative">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl md:rounded-3xl p-4 md:p-8 border border-white/20 max-w-4xl mx-auto">
             <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center overflow-hidden">
               {youtubeId ? (
                 <iframe

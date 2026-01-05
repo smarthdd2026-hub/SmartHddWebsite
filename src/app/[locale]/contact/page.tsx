@@ -61,13 +61,13 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="pt-24 pb-20">
+    <div className="pt-20 pb-12 md:pt-24 md:pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 md:mb-16">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
             {t('title')}
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             {t('subtitle')}
           </p>
         </div>
@@ -90,7 +90,7 @@ export default function ContactPage() {
               </button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200">
+            <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-4 md:p-8 border border-gray-200">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">

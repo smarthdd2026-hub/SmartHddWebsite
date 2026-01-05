@@ -7,24 +7,24 @@ export default function ProductsPage() {
   const showPrices = t('showPrices') !== 'false';
 
   return (
-    <div className="pt-24 pb-20">
+    <div className="pt-20 pb-12 md:pt-24 md:pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 md:mb-16">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
             {t('title')}
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             {t('pageSubtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto mb-8 md:mb-12">
           <div className="flex flex-col">
-            <div className="bg-gray-50 rounded-2xl p-6 mb-4 flex items-center justify-center min-h-[280px]">
+            <div className="bg-gray-50 rounded-2xl p-4 md:p-6 mb-4 flex items-center justify-center min-h-[200px] md:min-h-[280px]">
               <DynamicImage
                 basePath="/images/product-basic"
                 alt="SmartHDD Basic"
-                className="max-h-[250px] w-auto object-contain"
+                className="max-h-[180px] md:max-h-[250px] w-auto object-contain"
                 fallback={
                   <div className="text-center text-gray-400">
                     <div className="w-24 h-24 bg-gray-200 rounded-xl flex items-center justify-center mx-auto mb-2">
@@ -38,11 +38,11 @@ export default function ProductsPage() {
             <ProductCard type="basic" />
           </div>
           <div className="flex flex-col">
-            <div className="bg-gray-50 rounded-2xl p-6 mb-4 flex items-center justify-center min-h-[280px]">
+            <div className="bg-gray-50 rounded-2xl p-4 md:p-6 mb-4 flex items-center justify-center min-h-[200px] md:min-h-[280px]">
               <DynamicImage
                 basePath="/images/product-pro"
                 alt="SmartHDD Pro"
-                className="max-h-[250px] w-auto object-contain"
+                className="max-h-[180px] md:max-h-[250px] w-auto object-contain"
                 fallback={
                   <div className="text-center text-gray-400">
                     <div className="w-24 h-24 bg-gray-200 rounded-xl flex items-center justify-center mx-auto mb-2">
@@ -57,7 +57,7 @@ export default function ProductsPage() {
           </div>
         </div>
 
-        <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-6 text-center mb-12">
+        <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-4 md:p-6 text-center mb-8 md:mb-12">
           <p className="text-amber-900 font-medium text-lg mb-2">
             {t('note')}
           </p>
@@ -66,8 +66,8 @@ export default function ProductsPage() {
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl p-8 shadow-lg">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+        <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 text-center">
             {t('featureComparison')}
           </h2>
           <div className="overflow-x-auto">

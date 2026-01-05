@@ -7,26 +7,26 @@ export default function HowItWorksPage() {
   const tExt = useTranslations('howItWorksExtended');
 
   return (
-    <div className="pt-24 pb-20">
+    <div className="pt-20 pb-12 md:pt-24 md:pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 md:mb-16">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
             {t('title')}
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             {tExt('subtitle')}
           </p>
         </div>
 
         {/* Main Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-          <div className="relative bg-white rounded-2xl p-8 shadow-xl">
-            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-20">
+          <div className="relative bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+            <div className="absolute -top-5 md:-top-6 left-1/2 transform -translate-x-1/2">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-white text-lg md:text-xl font-bold">
                 1
               </div>
             </div>
-            <div className="mt-4 text-center">
+            <div className="mt-3 md:mt-4 text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Plug className="w-8 h-8 text-primary" />
               </div>
@@ -35,14 +35,14 @@ export default function HowItWorksPage() {
             </div>
           </div>
 
-          <div className="relative bg-white rounded-2xl p-8 shadow-xl">
-            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold">
+          <div className="relative bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+            <div className="absolute -top-5 md:-top-6 left-1/2 transform -translate-x-1/2">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-white text-lg md:text-xl font-bold">
                 2
               </div>
             </div>
-            <div className="mt-4 text-center">
-              <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="mt-3 md:mt-4 text-center">
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Calendar className="w-8 h-8 text-secondary" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{t('step2')}</h3>
@@ -50,14 +50,14 @@ export default function HowItWorksPage() {
             </div>
           </div>
 
-          <div className="relative bg-white rounded-2xl p-8 shadow-xl">
-            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold">
+          <div className="relative bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+            <div className="absolute -top-5 md:-top-6 left-1/2 transform -translate-x-1/2">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-white text-lg md:text-xl font-bold">
                 3
               </div>
             </div>
-            <div className="mt-4 text-center">
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="mt-3 md:mt-4 text-center">
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{t('step3')}</h3>
@@ -67,8 +67,8 @@ export default function HowItWorksPage() {
         </div>
 
         {/* Connection Diagram */}
-        <div className="bg-white rounded-2xl p-8 shadow-lg mb-20">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+        <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg mb-12 md:mb-20">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 text-center">
             {tExt('connectionDiagram') || 'Connection Diagram'}
           </h2>
           <div className="flex items-center justify-center">
@@ -89,12 +89,12 @@ export default function HowItWorksPage() {
         </div>
 
         {/* Detailed Features */}
-        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 md:p-12 mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl md:rounded-3xl p-4 md:p-12 mb-8 md:mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
             {tExt('whatMakesUnique')}
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             <div className="bg-white rounded-xl p-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -162,8 +162,8 @@ export default function HowItWorksPage() {
         </div>
 
         {/* Technical Specs */}
-        <div className="bg-white rounded-2xl p-8 shadow-lg">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+        <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 text-center">
             {tExt('technicalSpecs')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
